@@ -13,3 +13,11 @@ int main (){
     }
     return 0;
 }
+
+/*
+initialization
+while(condition){
+    login;
+    incr/decr;
+}
+*/

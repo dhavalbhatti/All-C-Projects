@@ -1,13 +1,22 @@
 #include <stdio.h>
 
-int main ()
+int main()
 {
+    int row, col, num = 5;
+    for (row = 1; row <= num; row++)
+    {
 
-    printf("    1 \n");
-    printf("   21 \n");
-    printf("  321 \n");
-    printf(" 4321 \n");
-    printf("54321 \n");
+        for (col = num; (col >= 1); col--)
+        {
+            if (row >= col)
+            {
+                printf("%d", col);
+            }
+            else
+                printf(" ");
+        }
+
+        printf("\n");
+    }
     return 0;
-
 }

@@ -1,13 +1,20 @@
 #include <stdio.h>
 
-int main ()
+int main()
 {
+    int row, col, num=1;
+    for (row = 1; row <= 5; row++)
+    {
 
-    printf("1 \n");
-    printf("2 3 \n");
-    printf("4 5 6 \n");
-    printf("7 8 9 10 \n");
-    printf("11 12 13 14 15 \n");
+        
+        for (col = 1; col <= row; col++)
+        {
+
+            printf("%d ", num);
+            num++;
+        }
+
+        printf("\n");
+    }
     return 0;
-
 }

@@ -2,7 +2,7 @@
 
 int main (){
 
-    int evensum=0, oddsum=0, num;
+    int evensum=0, oddsum=0, num, even=0, odd=0;
     
     for (int i = 1; i <= 10; i++)
     {
@@ -12,14 +12,15 @@ int main (){
         if (num%2==0)
         {
            evensum=evensum+num;
-           printf("%d is an even number\n", num);
+           even++;
         } else {
            oddsum=oddsum+num;
-           printf("%d is an odd number\n", num);
+           odd++;
         }
         
     }
-
+    printf("Total even numbers = %d \n", even);
+    printf("Total odd numbers = %d \n", odd);
     printf("Sum of even numbers = %d \n", evensum);
     printf("Sum of odd numbers = %d", oddsum);
 

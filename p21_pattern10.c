@@ -1,13 +1,18 @@
 #include <stdio.h>
 
-int main ()
+int main()
 {
+    int row, col;
+    for (row = 1; row <= 5; row++)
+    {
 
-    printf("1 \n");
-    printf("0 1 \n");
-    printf("1 0 1 \n");
-    printf("1 0 1 0 \n");
-    printf("1 0 1 0 1 \n");
+        for (col = 0; col < row; col++)
+        {
+
+            printf("%d ", (row + col) % 2);
+        }
+
+        printf("\n");
+    }
     return 0;
-
 }

@@ -1,13 +1,15 @@
 #include <stdio.h>
 
-int main ()
+int main()
 {
-
-    printf("1 \n");
-    printf("12 \n");
-    printf("123 \n");
-    printf("1234 \n");
-    printf("12345 \n");
+    int row, col;
+    for (row = 1; row <= 5; row++)
+    {
+        for (col = 1; col <= row; col++)
+        {
+            printf("%d",col);
+        }
+        printf("\n");
+    }
     return 0;
-
 }
